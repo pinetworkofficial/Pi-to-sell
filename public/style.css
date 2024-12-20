@@ -88,17 +88,16 @@ header h1 {
     font-size: 20px;
 }
 
-/* Grid Menu Container */
+/* Grid Menu */
 .grid-menu {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
     margin: 0 auto;
     max-width: 900px;
 }
 
-/* Grid Items Styling */
 .grid-item {
     background-color: white;
     border-radius: 10px;
